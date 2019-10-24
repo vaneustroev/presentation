@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogItemComboBox</class>
+ <widget class="QDialog" name="DialogItemComboBox">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>268</width>
+    <height>29</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>DialogItemComboBox</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/*QWidget {
+background-color: rgb(99,99,99); */
+/*background-color: rgb(169,169,29); */
+/*background-color: rgb(29,200,200); */
+/*color: rgb(229,229,229); 
+}*/
+
+QPushButton {
+background-color: rgb(129,129,129); 
+color: rgb(229,229,229); 
+border: 1px solid black;
+border-radius: 4px;
+}
+
+QComboBox {
+background-color: rgb(129,129,129); 
+color: rgb(229,229,229); 
+border: 1px solid black;
+border-radius: 4px;
+}
+
+/*QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,   stop:0 rgba(60, 186, 162, 255), stop:1 rgba(98, 211, 162, 255))
+}*/
+
+/*QPushButton {
+     background-color: #3cbaa2; 
+     border: 1px solid black;
+     border-radius: 4px;
+}*/
+
+/*QPushButton:disabled {
+    background-color: rgb(170, 170, 127)
+}*/
+
+QFrame {
+background-color: rgb(69,69,69); 
+color: rgb(229,229,229); 
+}
+
+QLabel {
+background-color: rgb(119,119,119); 
+color: rgb(229,229,229); 
+}
+
+/*QTreeWidget {
+background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 rgb(96,96,96), stop: 1 rgb(196,196,196));
+color:rgb(232,232,232); 
+border: 2px solid rgb(190,220,15);
+border-radius: 8px;border-style:solid; 
+}*/
+
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QComboBox" name="comboBox">
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

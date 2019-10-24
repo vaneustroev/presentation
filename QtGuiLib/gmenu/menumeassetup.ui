@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MenuMeasSetup</class>
+ <widget class="QWidget" name="MenuMeasSetup">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>834</width>
+    <height>719</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget:disabled {
+	/*background-color: rgb(144,144,144);*/
+	color: rgb(96,96,96); 
+}
+
+QGroupBox::title { 
+/*    background-color: transparent;*/
+    subcontrol-position: top left; /* position at the top left*/ 
+    padding:2 13px;
+ } 
+
+QGroupBox { 
+/*	background-color: rgb(129,129,19); */
+	background-color: rgb(159,159,159); 
+	border: 2px solid green; 
+	border-radius: 9px; 
+ } 
+
+QLineEdit { 
+	background-color: white; 
+/*	border: 2px solid rgb(129,129,19); */
+	background-color: rgb(159,159,159); 
+	border-radius: 5px; 
+/*	color: rgb(16,16,16); */
+	color: rgb(250,250,250); 
+ } 
+
+QLabel { 
+/*	background-color: rgb(129,129,19); */
+	background-color: rgb(159,159,159); 
+/*	color: rgb(16,16,16); */
+	color: rgb(250,250,250); 
+ } 
+
+QRadioButton { 
+/*	background-color: rgb(129,129,19); */
+	background-color: rgb(159,159,159); 
+/*	color: rgb(16,16,16); */
+	color: rgb(250,250,250); 
+ } 
+
+QTabWidget { 
+/*	background-color: rgb(129,129,19); */
+	background-color: rgb(159,159,159); 
+	border: 2px solid green; 
+	border-radius: 9px; 
+ } 
+
+QTabWidget::pane { /* The tab widget frame */
+/*	background-color: rgb(129,129,19); */
+	background-color: rgb(159,159,159); 
+	/*border-top: 2px solid #C2C7CB;*/
+}
+
+QTabWidget::tab-bar {
+	left: 0px; /* move to the right by 5px */
+}
+
+/* Style the tab using the tab sub-control. Note that it reads QTabBar _not_ QTabWidget */
+QTabBar::tab {
+/*	background-color: rgb(129,129,19); */
+/*	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                     stop: 0 #E1E1E1, stop: 0.4 #DDDDDD,
+                                     stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);*/
+	background-color: rgb(159,159,159); 
+	border: 2px solid #C4C4C3;
+	border-bottom-color: #C2C7CB; /* same as the pane color */
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	color: rgb(16,16,16); 
+	min-width: 5ex;
+	padding: 3px;
+}
+
+QTabBar::tab:selected, QTabBar::tab:hover {
+/*	background-color: rgb(129,129,19); */
+	background-color: rgb(159,159,159); 
+/*	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                     stop: 0 #fafafa, stop: 0.4 #f4f4f4,
+                                     stop: 0.5 #e7e7e7, stop: 1.0 #fafafa);*/
+}
+
+QTabBar::tab:selected {
+	/*	background-color: rgb(129,129,19); */
+	background-color: rgb(199,199,199); 
+	/*border-color: #9B9B9B;*/
+	/* same as pane color */
+	border-bottom-color: #C2C7CB; 
+}
+
+QTabBar::tab:!selected {
+	/*	background-color: rgb(129,129,19); */
+	background-color: rgb(159,159,159); 
+	margin-top: 3px; /* make non-selected tabs look smaller */
+}
+
+/*QTabBar::tab:only-one { 
+	width: 0; 
+	height: 0; 
+	border-style: none; 
+}*/
+
+/* Style the tab using the tab sub-control. Note that it reads QTabBar _not_ QTabWidget */
+QToolBox::tab {
+/*	background-color: rgb(129,129,19); */
+/*	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                     stop: 0 #E1E1E1, stop: 0.4 #DDDDDD,
+                                     stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);*/
+	background-color: rgb(159,159,159); 
+	border: 2px solid #C4C4C3;
+	border-bottom-color: #C2C7CB; /* same as the pane color */
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	color: rgb(16,16,16); 
+	min-width: 5ex;
+	padding: 3px;
+}
+
+QPushButton { 
+     background-color: rgb(159,159,149);
+     color: rgb(250,250,250); 
+     border-style: outset;
+     border-width: 2px;
+     border-radius: 10px;
+     border-color: beige;
+     font: bold 16px;
+     min-width: 10em;
+     padding: 6px;
+ } 
+
+QPushButton#EditCorrection { 
+     background-color: rgb(159,159,149); 
+ } 
+
+QPushButton#DeleteAllCorrections { 
+     background-color: rgb(159,159,149); 
+ } 
+
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>2</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QToolBox" name="MarkerPages">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="pageSettings">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>834</width>
+        <height>502</height>
+       </rect>
+      </property>
+      <attribute name="label">
+       <string>Settings</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_18">
+       <property name="spacing">
+        <number>2</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="pagePeakSearch">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>100</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <attribute name="label">
+       <string>Limits</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <property name="spacing">
+        <number>2</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page_3">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>100</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <attribute name="label">
+       <string>Meas Standart</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="spacing">
+        <number>2</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page_4">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>100</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <attribute name="label">
+       <string>Legacy Compat</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_25">
+       <property name="spacing">
+        <number>2</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page_5">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>100</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <attribute name="label">
+       <string>Tune &amp; Listen</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_32">
+       <property name="spacing">
+        <number>6</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>100</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <attribute name="label">
+       <string>Advanced</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="page_2">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>100</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <attribute name="label">
+       <string>Global</string>
+      </attribute>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

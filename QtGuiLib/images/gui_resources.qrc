@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>switchDown2.png</file>
+        <file>switchUp2.png</file>
+        <file>switchSelected.png</file>
+        <file>switchUnselected.png</file>
+        <file>exit.png</file>
+        <file>properties.png</file>
+        <file>busy.png</file>
+    </qresource>
+</RCC>
