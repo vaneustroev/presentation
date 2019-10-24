@@ -1,2 +1,2 @@
 # Presentation of source code
-This presentation of my source code
+This is a presentation of my source code
